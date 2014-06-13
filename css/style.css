@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/** {
+	border: 1px solid #bbb;
+}
+*/
+.header{
+	height: 40px;
+	border-bottom: 1px solid #bbb;
+}
+
+#nameLink{
+	margin-left: 10px;
+	font-family: Lato;
+	font-size: 25px;
+	padding: 0;
+	margin-top: 4px;
+	float: left;
+}
+
+.rightOptions{
+	float: right;
+	font-family: Lato;
+	font-size: 15px;
+	margin-top: 12px;
+}
+
+.rightOptionTabs{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+a.optionLinks{
+	text-decoration: none;
+	color: #000;
+}
+
+.container-narrow {
+  background: #fcfbd9;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #fcfbd9 0%, #ffe7a9 100%, #fcfbdd 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fcfbd9), color-stop(100%, #ffe7a9), color-stop(100%, #fcfbdd));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #fcfbd9 0%, #ffe7a9 100%, #fcfbdd 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #fcfbd9 0%, #ffe7a9 100%, #fcfbdd 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #fcfbd9 0%, #ffe7a9 100%, #fcfbdd 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #fcfbd9 0%, #ffe7a9 100%, #fcfbdd 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfbd9', endColorstr='#fcfbdd',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-size: cover; }
