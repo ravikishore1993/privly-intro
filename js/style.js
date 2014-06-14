@@ -1,12 +1,5 @@
 jQuery(window).ready(function($) {
-	$('section').css('min-height', $(window).height() + 'px');
-	// $('section#counter').css('padding-top', $(window).height() * 2 / 3 + 'px');
 
-	final = 1395419400;
-	start = 1394834674;
-	now = Math.round(new Date().getTime() / 1000);
-
-	percent = 100 - (final - now)*100 / (final - start);
 });
 
 function currentYPosition() {

@@ -12,9 +12,9 @@
   </head>
 
 <body>
-    <div id="containerFirst">
+    <div id="containerFirst" id="header">
         <nav>
-            <div class="header">
+            <div class="header" >
                 <span id="nameLink">
                     <span>
                         <a href="#" class="optionLinks">Privly</a>
@@ -33,22 +33,71 @@
                 </span>
             </div>
         </nav>
-    <section class="landing">
+    <section class="landing" id="landing">
         <div class="content">
             <img src="images/logo_290.png" alt="">
             <h1>Privly Extension</h1>
             <p>First Time User Guide</p>
             <p>
-                <button class="pure-button button-secondary ">Start</button>
+                <button class="pure-button button-secondary " href="javascript:void(0);" onclick="startIntro();">Start</button>
             </p>
         </div>
-    </section>
+    </section>    
     </div>
+    <section class="inputInject">
+        <div id="inputInjectHeader">
+        <h1>
+            INPUTS
+        </h1>
+        </div>
+        <div class="showcase">
+            <span>
+                <img src="http://dummyimage.com/400x600/bbb/fff" alt="">
+            </span>
+            <div id="showcaseMain">
+                <form class="pure-form pure-form-aligned">
+                    <fieldset>
+                        <div class="pure-control-group " id="showcaseInputElement">
+                            <label for="foo">Playground Input</label>
+                            <input type="text" id="showcaseInputText" placeholder="Enter something here...">
+                             <button type="submit" id="showcaseInputSubmit" class="pure-button pure-button-primary">Post</button>
+                        </div>
+                        <div id="showcaseOutputElement">
+                            
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer>
     
     </footer>    
     <script type="text/javascript" src="js/intro.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/style.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+
+    function startIntro(){
+      var intro = introJs();
+        intro.setOptions({
+          steps: [
+            { 
+              intro: "Privly lets you send/view content without host site able to read content"
+            },
+            { 
+              intro: "Right click input element and select Privly. Click ZeroBin for now",
+              element: document.querySelector('#showcaseMain')
+            }
+
+        ]
+        });
+
+        intro.start();
+    }
+
+    </script>
+
 </body>
 </html>

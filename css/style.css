@@ -60,7 +60,7 @@ a.optionLinks{
 
 .landing .content p button{
 	margin-top: 20px;
-	margin-bottom: 20px; 
+	margin-bottom: 40px; 
 }
 
 .header {
@@ -86,6 +86,39 @@ a.optionLinks{
   /* IE6-9 fallback on horizontal gradient */
   background-size: cover; }
 
+#inputInjectHeader {
+	background-color: #1ba1e2;
+	height: 45px;
+	text-align: left;
+}
+
+#inputInjectHeader h1 {
+	    margin: 0;
+    color: white;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.showcase {
+	background-color: #fff;
+	position: relative;
+}
+
+#showcaseMain {
+	margin-left: 400px;
+	position: absolute;
+	top:0;
+}
+
+#showcaseInputElement{
+	margin-top: 25px;
+}
+
+#showcaseOutputElement {
+	margin-left: 50px;
+	font-family: 'Lato';
+	font-size: 20px;
+}
 
 /* Snippets from PureCSS */
         .button-success,
