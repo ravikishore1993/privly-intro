@@ -6,7 +6,6 @@
 */
 .header{
 	height: 40px;
-	border-bottom: 1px solid #bbb;
 }
 
 #nameLink{
@@ -32,10 +31,43 @@
 
 a.optionLinks{
 	text-decoration: none;
-	color: #000;
+	color: #333;
 }
 
-.container-narrow {
+.content img {
+	height: 220px;
+}
+
+.landing .content {
+	padding-top: 2%;
+	text-align: center;
+	color: #42454e;
+	font-size: 1.5em; 
+}
+
+.landing .content h1 {
+	 margin: 0 0 5px; 
+}
+
+.landing .content img {
+	padding-top: 20px;
+	padding-bottom: 50px; 
+}
+
+.landing .content p {
+	margin: 0; 
+}
+
+.landing .content p button{
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+.header {
+	background-color: rgba(105, 87, 55, 0.05);
+}
+
+#containerFirst {
   background: #fcfbd9;
   /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover, #fcfbd9 0%, #ffe7a9 100%, #fcfbdd 100%);
@@ -53,3 +85,32 @@ a.optionLinks{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfbd9', endColorstr='#fcfbdd',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   background-size: cover; }
+
+
+/* Snippets from PureCSS */
+        .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+
