@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
+* {
+	font-family: 'Lato';
+}
+
 /** {
 	border: 1px solid #bbb;
 }
@@ -60,7 +64,7 @@ a.optionLinks{
 
 .landing .content p button{
 	margin-top: 20px;
-	margin-bottom: 40px; 
+	margin-bottom: 60px; 
 }
 
 .header {
@@ -92,7 +96,46 @@ a.optionLinks{
 	text-align: left;
 }
 
+#textareaHeader {
+	background-color: #1ba1e2;
+	height: 45px;
+	text-align: left;
+}
+
+#editableHeader {
+	background-color: #1ba1e2;
+	height: 45px;
+	text-align: left;
+}
+
+#othersHeader {
+	background-color: #1ba1e2;
+	height: 45px;
+	text-align: left;
+}
+
 #inputInjectHeader h1 {
+	    margin: 0;
+    color: white;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+#textareaHeader h1 {
+	    margin: 0;
+    color: white;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+#editableHeader h1 {
+	    margin: 0;
+    color: white;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+#othersHeader h1 {
 	    margin: 0;
     color: white;
     padding-top: 3px;
@@ -102,22 +145,53 @@ a.optionLinks{
 .showcase {
 	background-color: #fff;
 	position: relative;
+	height: 600px;
 }
 
 #showcaseMain {
 	margin-left: 400px;
 	position: absolute;
+	width: 600px;
 	top:0;
+}
+
+.inputspan {
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 #showcaseInputElement{
 	margin-top: 25px;
+	font-size: 18px;
+}
+
+
+#showcaseInputSubmit{
+	height: 50px;
+}
+
+#showcaseInputElement input{
+	width: 300px;
+	height: 50px;
 }
 
 #showcaseOutputElement {
 	margin-left: 50px;
 	font-family: 'Lato';
 	font-size: 20px;
+	border: 1px solid;
+	margin-top: 50px;
+	height: 100px;
+	border-color: #bbb;
+	padding-left: 10px;
+	padding-top: 5px;
+	width: 80%;
+}
+
+.rightimage {
+	position: absolute;
+	right: 0;
 }
 
 /* Snippets from PureCSS */
@@ -126,8 +200,8 @@ a.optionLinks{
         .button-warning,
         .button-secondary {
             color: white;
-            border-radius: 4px;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        	border-radius: 4px;
         }
 
         .button-success {
@@ -146,4 +220,21 @@ a.optionLinks{
             background: rgb(66, 184, 221); /* this is a light blue */
         }
 
+/*Scrollbar snippet*/
 
+::-webkit-scrollbar {
+	width:8px;
+	background:transparent;
+}
+
+::-webkit-scrollbar-track {
+	background:#FFF;
+	width:0px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+::-webkit-scrollbar-thumb {
+	background:#ccc;
+	color:#FFF;
+}
