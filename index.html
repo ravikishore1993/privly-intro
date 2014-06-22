@@ -12,6 +12,7 @@
   </head>
 
 <body>
+    <div class="introjsFloatingElement" data-step="1" data-position="floating" data-intro="Privly lets you send/view content without host site able to read content"></div>
     <div id="containerFirst" id="header">
         <nav>
             <div class="header" >
@@ -39,12 +40,12 @@
             <h1>Privly Extension</h1>
             <p>First Time User Guide</p>
             <p>
-                <button class="pure-button button-secondary " href="javascript:void(0);" onclick="startIntro();">Start</button>
+                <button class="pure-button button-secondary " href="javascript:void(0);" onclick="javascript:introJs().start();">Start</button>
             </p>
         </div>
     </section>    
     </div>
-    <section class="inputInject">
+    <section class="inputInject" id="inputInject">
         <div id="inputInjectHeader">
         <h1>
             INPUTS
@@ -54,7 +55,7 @@
             <span>
                 <img src="http://dummyimage.com/400x600/bbb/fff" alt="">
             </span>
-            <div id="showcaseMain">
+            <div id="showcaseMain" data-position='top' data-intro="Right click input element and select Privly. Click ZeroBin for now" data-step="2">
                 <span class="inputspan">
                     <form class="pure-form pure-form-aligned">
                         <fieldset>
@@ -73,8 +74,8 @@
             </div>
         </div>
     </section>
-    <section class="inputInject">
-        <div id="textareaHeader">
+    <section class="inputInject" id="textareaInject">
+        <div id="textareaHeader" >
         <h1>
             TEXT AREA
         </h1>
@@ -83,11 +84,21 @@
             <span class="rightimage">
                 <img src="http://dummyimage.com/400x600/bbb/fff" alt="">
             </span>
-            <div id="">
+            <div id="textareaContent" data-position='right' data-intro="Post anything to your Social Network easily. Write your content in the text area, select them and rigth click and use Privly!" data-step="3">
+                <textarea id="inputTextArea"  placeholder="Enter Something to post ..."></textarea>
+                <div id="contentBelowTextArea">
+                    <span>
+                        Playground Text Area
+                    </span>
+                    <button type="submit" id="showcaseTextSubmit" class="pure-button pure-button-primary" >Post</button>
+                </div>
+                <p id="postedTextContent">
+                    
+                </p>
             </div>
         </div>
     </section>
-    <section class="inputInject">
+    <section class="inputInject" id="editsection">
         <div id="editableHeader">
         <h1>
             BONUS! EDIT THEM.
@@ -97,11 +108,15 @@
             <span>
                 <img src="http://dummyimage.com/400x600/bbb/fff" alt="">
             </span>
-            <div id="">
+            <div id="editSectionContainer">
+                <div id="editContentContainer" data-intro="Surprise! You can even edit it. Double click the previously posted cntent." data-step="4" data-position="top">
+                    <p id="editContent" >
+                    </p>
+                </div>        
             </div>
         </div>
     </section>
-    <section class="inputInject">
+    <section class="inputInject" id="othersection">
         <div id="othersHeader">
         <h1>
             SETTINGS &amp; GLYPH 
@@ -115,8 +130,8 @@
     <footer>
     
     </footer>    
-    <script type="text/javascript" src="js/intro.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
     <script type="text/javascript" src="js/style.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">

@@ -194,6 +194,69 @@ a.optionLinks{
 	right: 0;
 }
 
+#textareaContent {
+	position: absolute;
+	margin-right: 300px;
+	padding-right: 100px;
+	margin-left: 50px;
+	padding-left: 50px;
+	margin-top: 25px;
+	padding-top: 25px;
+}
+
+#inputTextArea {
+	height: 200px;
+	width: 600px;
+	padding: 10px;
+	font-size: 20px;
+	border: 2px solid #888;
+}
+
+#contentBelowTextArea {
+	margin-top: 10px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+#contentBelowTextArea span{
+	font-size: 20px;
+	margin: auto auto;
+}
+
+#showcaseTextSubmit {
+	float: right;
+	width: 100px;
+}
+
+#postedTextContent {
+	height: 200px;
+	margin-top: 20px;
+	line-height: 50px;
+	padding: 15px;
+	font-size: 20px;
+	color: #999;
+	border: 1px dotted #bbb;
+}
+
+#editSectionContainer {
+	margin-left: 400px;
+	position: absolute;
+	top: 0;
+}
+
+#editContentContainer {
+	height: 200px;	
+	margin-top: 20px;
+	line-height: 50px;
+	padding: 15px;
+	font-size: 20px;
+	color: #999;
+	border: 1px dotted #bbb;
+	margin-left: 50px;
+	min-width: 600px;
+}
+
 /* Snippets from PureCSS */
         .button-success,
         .button-error,
